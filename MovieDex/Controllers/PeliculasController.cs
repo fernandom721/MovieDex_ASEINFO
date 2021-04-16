@@ -11,6 +11,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Linq.Dynamic.Core;
+using Microsoft.Extensions.Logging;
 
 namespace MovieDex.Controllers
 {
@@ -21,14 +23,17 @@ namespace MovieDex.Controllers
         private readonly ApplicationDbContext context;
         private readonly IMapper mapper;
         private readonly IAlmacenadorArchivos almacenadorArchivos;
+        private readonly ILogger<PeliculasController> logger;
         private readonly string contenedor = "peliculas";
 
         public PeliculasController(ApplicationDbContext context, IMapper mapper,
-            IAlmacenadorArchivos almacenadorArchivos)
+            IAlmacenadorArchivos almacenadorArchivos,
+            ILogger<PeliculasController>logger)
         {
             this.context = context;
             this.mapper = mapper;
             this.almacenadorArchivos = almacenadorArchivos;
+            this.logger = logger;
         }
 
         [HttpGet]
@@ -80,6 +85,19 @@ namespace MovieDex.Controllers
                     .Where(x => x.PeliculasGeneros.Select(y => y.GeneroId)
                     .Contains(filtroPeliculasDTO.GeneroId));
             }
+
+            if (!string.IsNullOrEmpty(filtroPeliculasDTO.CampoOrdenar))
+            {
+                var tipoOrden = filtroPeliculasDTO.OrdenAscendente ? "ascending" : "descending";
+                try
+                {
+                    peliculasQueryable = peliculasQueryable.OrderBy($"{filtroPeliculasDTO.CampoOrdenar}{tipoOrden}");
+                }
+                catch(Exception ex) {
+                    logger.LogError(ex.Message, ex);
+                }
+            }
+
             await HttpContext.InsertarParametrosPaginacion(peliculasQueryable,
                 filtroPeliculasDTO.CantidadRegistrosPorPagina);
 
