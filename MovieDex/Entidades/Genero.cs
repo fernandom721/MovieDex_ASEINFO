@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MovieDex.Entidades
 {
-    public class Genero
+    public class Genero: IId
     {
         public int Id { get; set; }
 

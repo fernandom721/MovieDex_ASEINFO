@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace MovieDex.Entidades
 {
-    public class Actor: IId
+    public class SaladeCine : IId
     {
         public int Id { get; set; }
         [Required]
-        [StringLength (120)]
+        [StringLength(120)]
         public string Nombre { get; set; }
-        public DateTime FechaNacimiento { get; set; }
-        public string Foto { get; set; }
-        public List<PeliculasActores> PeliculasActores { get; set; }
     }
 }
