@@ -4,14 +4,12 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MovieDex.Entidades
+namespace MovieDex.DTOs
 {
-    public class SaladeCine : IId
+    public class SaladeCineCreacionDTO
     {
-        public int Id { get; set; }
         [Required]
         [StringLength(120)]
         public string Nombre { get; set; }
-        public List<PeliculasSalasdeCine> peliculasSalasdeCines { get; set; }
     }
 }

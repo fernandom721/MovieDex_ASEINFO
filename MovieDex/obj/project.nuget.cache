@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WHOq638zhgEIu1YQHDr4zWJmgYmSaYMVvAm02XMYoDeOrenqkcrBHI8huCwRaMOWzOIoMGPUsdm7pCstwDsMTQ==",
+  "dgSpecHash": "WrTxrxErD2Xzv3EKVwHT+eXGpdAT0Z4Y1rp8YyS4n7jILtEqEvNPnl9ZiI5bSUcL3rIBjcBLssSOoLh86Q92Rg==",
   "success": true,
   "projectFilePath": "C:\\Users\\ferna\\source\\repos\\MovieDex\\MovieDex\\MovieDex.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,7 @@
     "C:\\Users\\ferna\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.5\\microsoft.entityframeworkcore.design.5.0.5.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.5\\microsoft.entityframeworkcore.relational.5.0.5.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.5\\microsoft.entityframeworkcore.sqlserver.5.0.5.nupkg.sha512",
+    "C:\\Users\\ferna\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver.nettopologysuite\\5.0.5\\microsoft.entityframeworkcore.sqlserver.nettopologysuite.5.0.5.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.5\\microsoft.entityframeworkcore.tools.5.0.5.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
@@ -42,6 +43,8 @@
     "C:\\Users\\ferna\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\netstandard.library\\2.0.1\\netstandard.library.2.0.1.nupkg.sha512",
+    "C:\\Users\\ferna\\.nuget\\packages\\nettopologysuite\\2.1.0\\nettopologysuite.2.1.0.nupkg.sha512",
+    "C:\\Users\\ferna\\.nuget\\packages\\nettopologysuite.io.sqlserverbytes\\2.0.0\\nettopologysuite.io.sqlserverbytes.2.0.0.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
@@ -68,6 +71,7 @@
     "C:\\Users\\ferna\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\system.linq.dynamic.core\\1.2.9\\system.linq.dynamic.core.1.2.9.nupkg.sha512",
+    "C:\\Users\\ferna\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\system.net.nameresolution\\4.3.0\\system.net.nameresolution.4.3.0.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\system.net.primitives\\4.3.0\\system.net.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\system.private.datacontractserialization\\4.3.0\\system.private.datacontractserialization.4.3.0.nupkg.sha512",

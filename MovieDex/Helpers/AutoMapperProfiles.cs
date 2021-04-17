@@ -16,6 +16,9 @@ namespace MovieDex.Helpers
             CreateMap<Genero, GeneroDTO>().ReverseMap();
             CreateMap<GeneroCreacionDTO, Genero>();
 
+            CreateMap<SaladeCine, SaladeCineDTO>().ReverseMap();
+            CreateMap<SaladeCineCreacionDTO, SaladeCine>();
+
             CreateMap<Actor, ActorDTO>().ReverseMap();
             CreateMap<ActorCreacionDTO, Actor>()
                 .ForMember(x => x.Foto, options => options.Ignore());

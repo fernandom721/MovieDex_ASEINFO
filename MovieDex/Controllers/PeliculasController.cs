@@ -52,14 +52,12 @@ namespace MovieDex.Controllers
                 .Where(x => x.EnCines)
                 .OrderBy(x => x.FechaEstreno)
                 .Take(top).ToListAsync();
-
+            
             var resultado = new PeliculasIndexDTO();
             resultado.FuturosEstrenos = mapper.Map<List<PeliculaDTO>>(proximosEstrenos);
             resultado.EnCines = mapper.Map<List<PeliculaDTO>>(enCines);
             return resultado;
-            /*
-            var peliculas = await context.Peliculas.ToListAsync();
-            return mapper.Map<List<PeliculaDTO>>(peliculas);*/
+
         }
 
         [HttpGet("filtro")]
