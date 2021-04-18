@@ -63,3 +63,13 @@ C:\Users\ferna\source\repos\MovieDex\MovieDex\obj\Debug\net5.0\MovieDex.dll
 C:\Users\ferna\source\repos\MovieDex\MovieDex\obj\Debug\net5.0\ref\MovieDex.dll
 C:\Users\ferna\source\repos\MovieDex\MovieDex\obj\Debug\net5.0\MovieDex.pdb
 C:\Users\ferna\source\repos\MovieDex\MovieDex\obj\Debug\net5.0\MovieDex.genruntimeconfig.cache
+C:\Users\ferna\source\repos\MovieDex\MovieDex\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.dll
+C:\Users\ferna\source\repos\MovieDex\MovieDex\bin\Debug\net5.0\NetTopologySuite.dll
+C:\Users\ferna\source\repos\MovieDex\MovieDex\bin\Debug\net5.0\NetTopologySuite.IO.SqlServerBytes.dll
+C:\Users\ferna\source\repos\MovieDex\MovieDex\obj\Debug\net5.0\EFCoreSqlServerNetTopologySuite.cs
+C:\Users\ferna\source\repos\MovieDex\MovieDex\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ferna\source\repos\MovieDex\MovieDex\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\ferna\source\repos\MovieDex\MovieDex\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\ferna\source\repos\MovieDex\MovieDex\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\ferna\source\repos\MovieDex\MovieDex\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\ferna\source\repos\MovieDex\MovieDex\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll

@@ -3,21 +3,35 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using Microsoft.AspNetCore.Identity;
 using MovieDex.Controllers;
 using MovieDex.DTOs;
 using MovieDex.Entidades;
+using NetTopologySuite.Geometries;
 
 namespace MovieDex.Helpers
 {
     public class AutoMapperProfiles : Profile
     {
-        public AutoMapperProfiles()
+        public AutoMapperProfiles(GeometryFactory geometryFactory)
         {
             CreateMap<Genero, GeneroDTO>().ReverseMap();
             CreateMap<GeneroCreacionDTO, Genero>();
 
-            CreateMap<SaladeCine, SaladeCineDTO>().ReverseMap();
-            CreateMap<SaladeCineCreacionDTO, SaladeCine>();
+            CreateMap<IdentityUser, UsuarioDTO>();
+
+            CreateMap<SaladeCine, SaladeCineDTO>()
+                .ForMember(x => x.Latitud, x => x.MapFrom(y => y.Ubicacion.Y))
+                .ForMember(x => x.Longitud, x => x.MapFrom(y => y.Ubicacion.X));
+
+
+
+            CreateMap<SaladeCineDTO, SaladeCine>()
+                .ForMember(x => x.Ubicacion, x => x.MapFrom(y =>
+               geometryFactory.CreatePoint(new Coordinate(y.Longitud, y.Latitud))));
+            CreateMap<SaladeCineCreacionDTO, SaladeCine>()
+                .ForMember(x => x.Ubicacion, x => x.MapFrom(y =>
+               geometryFactory.CreatePoint(new Coordinate(y.Longitud, y.Latitud))));
 
             CreateMap<Actor, ActorDTO>().ReverseMap();
             CreateMap<ActorCreacionDTO, Actor>()
