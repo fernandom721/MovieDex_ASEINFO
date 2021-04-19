@@ -34,6 +34,15 @@ namespace MovieDex.Controllers
         protected async Task<List<TDTO>> Get<TEntidad, TDTO>(PaginacionDTO paginacionDTO) where TEntidad : class
         {
             var queryable = context.Set<TEntidad>().AsQueryable();
+
+            return await Get<TEntidad, TDTO>(paginacionDTO, queryable);
+        }
+
+        //Get (paginacion)
+        protected async Task<List<TDTO>> Get<TEntidad, TDTO>(PaginacionDTO paginacionDTO,
+            IQueryable<TEntidad> queryable) where TEntidad : class
+        {
+            
             await HttpContext.InsertarParametrosPaginacion(queryable, paginacionDTO.CantidadRegistrosXPagina);
             var entidades = await queryable.Paginar(paginacionDTO).ToListAsync();
             var dtos = mapper.Map<List<TDTO>>(entidades);

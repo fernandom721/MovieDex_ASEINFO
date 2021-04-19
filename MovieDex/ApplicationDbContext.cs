@@ -172,6 +172,7 @@ namespace MovieDex
         public DbSet<PeliculasGeneros> PeliculasGeneros { get; set; }
         public DbSet<SaladeCine> SalasdeCines { get; set; }
         public DbSet<PeliculasSalasdeCine> PeliculasSalasdeCines { get; set; }
+        public DbSet<Review>Reviews { get; set; }
 
     }
 }
